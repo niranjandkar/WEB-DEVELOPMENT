@@ -1,0 +1,36 @@
+.chat-card {
+    position: relative;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    border-left: #cfcfcf28 1px solid;
+    .message-input {
+      position: absolute;
+      bottom: 0;
+      background: #202c33;
+      display: flex;
+      padding: 0 1rem;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      .navbar-icons {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        gap: 0.5rem;
+        align-items: center;
+        cursor: pointer;
+        span {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            border-radius: 50%;
+            background-color: icon-hover-color;
+            transition: 300ms background ease-in;
+          }
+        }
+      }
